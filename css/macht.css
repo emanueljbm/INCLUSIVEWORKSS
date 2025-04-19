@@ -1,0 +1,184 @@
+/* Estilos globales con espacios muy reducidos */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --success-color: #2ecc71;
+    --light-gray: #f8f9fa;
+    --dark-gray: #343a40;
+    --box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    --transition: all 0.2s ease;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .container {
+    max-width: 800px;  /* Significativamente reducido de 960px */
+    margin: 0 auto;
+    padding: 1rem;     /* Reducido aún más de 1.5rem */
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  /* Encabezado más compacto */
+  h1.text-center {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;  /* Reducido de 1.5rem */
+    font-weight: 600;
+    font-size: 1.8rem;    /* Reducido del tamaño predeterminado */
+    position: relative;
+    padding-bottom: 0.3rem;
+  }
+  
+  h1.text-center::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;       /* Reducido de 80px */
+    height: 2px;       /* Reducido de 3px */
+    background-color: var(--primary-color);
+  }
+  
+  /* Navegación con pestañas más compacta */
+  .nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 1rem;  /* Reducido de 1.5rem */
+  }
+  
+  .nav-tabs .nav-link {
+    border: none;
+    color: #6c757d;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;  /* Muy reducido */
+    transition: var(--transition);
+    margin-right: 0.3rem;
+    font-size: 0.9rem;
+  }
+  
+  .nav-tabs .nav-link:hover {
+    color: var(--primary-color);
+    border-color: transparent;
+  }
+  
+  .nav-tabs .nav-link.active {
+    color: var(--primary-color);
+    background-color: transparent;
+    border-bottom: 2px solid var(--primary-color);
+  }
+  
+  /* Formularios más compactos */
+  .form-label {
+    font-weight: 500;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .form-control {
+    border-radius: 3px;
+    padding: 0.4rem 0.6rem;  /* Muy reducido */
+    border: 1px solid #ced4da;
+    transition: var(--transition);
+    font-size: 0.9rem;
+  }
+  
+  .form-control:focus {
+    box-shadow: 0 0 0 0.15rem rgba(52, 152, 219, 0.2);
+    border-color: var(--primary-color);
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.4rem 1rem;  /* Muy reducido */
+    font-weight: 500;
+    border-radius: 3px;
+    transition: var(--transition);
+    font-size: 0.9rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tarjetas de coincidencia más compactas */
+  .card {
+    border: none;
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 0.8rem;  /* Muy reducido */
+  }
+  
+  .card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .card-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-text {
+    color: #495057;
+    font-size: 0.85rem;
+  }
+  
+  .card-text strong {
+    color: var(--secondary-color);
+  }
+  
+  /* Diseño responsivo aún más compacto */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0.6rem;
+    }
+    
+    .nav-tabs .nav-link {
+      padding: 0.3rem 0.5rem;
+      font-size: 0.85rem;
+    }
+    
+    .card-body {
+      padding: 0.6rem;
+    }
+  }
+  
+  /* Reducir espacios entre elementos de formulario */
+  .mb-3 {
+    margin-bottom: 0.6rem !important;
+  }
+  
+  /* Ajuste de columnas para más compactas */
+  .row {
+    margin-right: -8px;
+    margin-left: -8px;
+  }
+  
+  .col-md-6 {
+    padding-right: 8px;
+    padding-left: 8px;
+  }

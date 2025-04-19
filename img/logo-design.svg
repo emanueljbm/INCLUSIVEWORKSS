@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+    <!-- Fondo con color específico -->
+    <rect width="500" height="500" fill="#2b4162" rx="50" ry="50"/>
+
+    <!-- Símbolo de personas conectadas -->
+    <g transform="translate(250, 250) scale(1.5)">
+        <!-- Persona 1 (más pequeña) -->
+        <circle cx="-70" cy="-30" r="40" fill="white" opacity="0.7"/>
+        
+        <!-- Persona 2 (más grande) -->
+        <circle cx="70" cy="-30" r="60" fill="white" opacity="0.9"/>
+
+        <!-- Línea de conexión -->
+        <line x1="-30" y1="-30" x2="30" y2="-30" 
+              stroke="white" stroke-width="10" 
+              stroke-linecap="round"/>
+    </g>
+
+    <!-- Texto -->
+    <text x="250" y="420" 
+          text-anchor="middle" 
+          font-family="Arial, sans-serif" 
+          font-size="40" 
+          font-weight="bold" 
+          fill="white">
+        InclusiveWork
+    </text>
+</svg>
